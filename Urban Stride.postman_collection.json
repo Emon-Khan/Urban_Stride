@@ -19,13 +19,31 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{url}}/shop/products",
+					"raw": "{{url}}/shop/products?sort=title&pageIndex=1&pageSize=6&search=blaze",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"shop",
 						"products"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "title"
+						},
+						{
+							"key": "pageIndex",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "6"
+						},
+						{
+							"key": "search",
+							"value": "blaze"
+						}
 					]
 				}
 			},
@@ -83,6 +101,47 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"totalPages\": 3,\n    \"totalCount\": 17,\n    \"pageIndex\": 1,\n    \"pageSize\": 6,\n    \"productList\": [\n        {\n            \"productId\": 17,\n            \"unitPrice\": 190.0,\n            \"brandId\": 3,\n            \"categoryId\": 2,\n            \"title\": \"All-Star Strike\",\n            \"sku\": \"B117\",\n            \"description\": \"Best shoes for all-rounders\",\n            \"categoryName\": \"Cricket\",\n            \"brandName\": \"Under Armour\",\n            \"imageUrl\": \"shoes-17.png\"\n        },\n        {\n            \"productId\": 4,\n            \"unitPrice\": 200.0,\n            \"brandId\": 1,\n            \"categoryId\": 1,\n            \"title\": \"Blaze Runner\",\n            \"sku\": \"B104\",\n            \"description\": \"High-performance running shoes\",\n            \"categoryName\": \"Football\",\n            \"brandName\": \"Puma\",\n            \"imageUrl\": \"shoes-4.png\"\n        },\n        {\n            \"productId\": 8,\n            \"unitPrice\": 175.0,\n            \"brandId\": 1,\n            \"categoryId\": 2,\n            \"title\": \"Champion Strike\",\n            \"sku\": \"B108\",\n            \"description\": \"Top-quality cricket shoes\",\n            \"categoryName\": \"Cricket\",\n            \"brandName\": \"Puma\",\n            \"imageUrl\": \"shoes-8.png\"\n        },\n        {\n            \"productId\": 7,\n            \"unitPrice\": 160.0,\n            \"brandId\": 2,\n            \"categoryId\": 1,\n            \"title\": \"Court Dominator\",\n            \"sku\": \"B107\",\n            \"description\": \"Master the court with these shoes\",\n            \"categoryName\": \"Football\",\n            \"brandName\": \"Reebok\",\n            \"imageUrl\": \"shoes-7.png\"\n        },\n        {\n            \"productId\": 5,\n            \"unitPrice\": 180.0,\n            \"brandId\": 2,\n            \"categoryId\": 2,\n            \"title\": \"Elite Spike\",\n            \"sku\": \"B105\",\n            \"description\": \"Cricket spikes for professionals\",\n            \"categoryName\": \"Cricket\",\n            \"brandName\": \"Reebok\",\n            \"imageUrl\": \"shoes-5.png\"\n        },\n        {\n            \"productId\": 3,\n            \"unitPrice\": 150.0,\n            \"brandId\": 2,\n            \"categoryId\": 3,\n            \"title\": \"Feather Smash\",\n            \"sku\": \"B103\",\n            \"description\": \"Lightweight badminton shoes\",\n            \"categoryName\": \"Badminton\",\n            \"brandName\": \"Reebok\",\n            \"imageUrl\": \"shoes-3.png\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "productById",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/shop/products/17",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"shop",
+								"products",
+								"17"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"productId\": 17,\n    \"unitPrice\": 190.0,\n    \"brandId\": 3,\n    \"categoryId\": 2,\n    \"title\": \"All-Star Strike\",\n    \"sku\": \"B117\",\n    \"description\": \"Best shoes for all-rounders\",\n    \"categoryName\": \"Cricket\",\n    \"brandName\": \"Under Armour\",\n    \"imageUrl\": \"shoes-17.png\"\n}"
 				}
 			]
 		},
@@ -99,13 +158,29 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{url}}/shop/products",
+					"raw": "{{url}}/shop/products?sort=priceAsc",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"shop",
 						"products"
+					],
+					"query": [
+						{
+							"key": "brandId",
+							"value": "3",
+							"disabled": true
+						},
+						{
+							"key": "categoryId",
+							"value": "3",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "priceAsc"
+						}
 					]
 				}
 			},
@@ -479,13 +554,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{url}}/shop/categories",
+					"raw": "{{url}}/shop/brands",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"shop",
-						"categories"
+						"brands"
 					]
 				}
 			},
