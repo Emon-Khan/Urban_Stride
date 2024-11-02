@@ -1,0 +1,534 @@
+{
+	"info": {
+		"_postman_id": "8fbfebbc-0ea9-4e2e-9d57-04a1f3e3139e",
+		"name": "Urban Stride",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11436203"
+	},
+	"item": [
+		{
+			"name": "shop/products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/shop/products",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"shop",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/shop/products?sort=title&pageIndex=1&pageSize=6",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"shop",
+								"products"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "title"
+								},
+								{
+									"key": "pageIndex",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalPages\": 3,\n    \"totalCount\": 17,\n    \"pageIndex\": 1,\n    \"pageSize\": 6,\n    \"productList\": [\n        {\n            \"productId\": 17,\n            \"unitPrice\": 190.0,\n            \"brandId\": 3,\n            \"categoryId\": 2,\n            \"title\": \"All-Star Strike\",\n            \"sku\": \"B117\",\n            \"description\": \"Best shoes for all-rounders\",\n            \"categoryName\": \"Cricket\",\n            \"brandName\": \"Under Armour\",\n            \"imageUrl\": \"shoes-17.png\"\n        },\n        {\n            \"productId\": 4,\n            \"unitPrice\": 200.0,\n            \"brandId\": 1,\n            \"categoryId\": 1,\n            \"title\": \"Blaze Runner\",\n            \"sku\": \"B104\",\n            \"description\": \"High-performance running shoes\",\n            \"categoryName\": \"Football\",\n            \"brandName\": \"Puma\",\n            \"imageUrl\": \"shoes-4.png\"\n        },\n        {\n            \"productId\": 8,\n            \"unitPrice\": 175.0,\n            \"brandId\": 1,\n            \"categoryId\": 2,\n            \"title\": \"Champion Strike\",\n            \"sku\": \"B108\",\n            \"description\": \"Top-quality cricket shoes\",\n            \"categoryName\": \"Cricket\",\n            \"brandName\": \"Puma\",\n            \"imageUrl\": \"shoes-8.png\"\n        },\n        {\n            \"productId\": 7,\n            \"unitPrice\": 160.0,\n            \"brandId\": 2,\n            \"categoryId\": 1,\n            \"title\": \"Court Dominator\",\n            \"sku\": \"B107\",\n            \"description\": \"Master the court with these shoes\",\n            \"categoryName\": \"Football\",\n            \"brandName\": \"Reebok\",\n            \"imageUrl\": \"shoes-7.png\"\n        },\n        {\n            \"productId\": 5,\n            \"unitPrice\": 180.0,\n            \"brandId\": 2,\n            \"categoryId\": 2,\n            \"title\": \"Elite Spike\",\n            \"sku\": \"B105\",\n            \"description\": \"Cricket spikes for professionals\",\n            \"categoryName\": \"Cricket\",\n            \"brandName\": \"Reebok\",\n            \"imageUrl\": \"shoes-5.png\"\n        },\n        {\n            \"productId\": 3,\n            \"unitPrice\": 150.0,\n            \"brandId\": 2,\n            \"categoryId\": 3,\n            \"title\": \"Feather Smash\",\n            \"sku\": \"B103\",\n            \"description\": \"Lightweight badminton shoes\",\n            \"categoryName\": \"Badminton\",\n            \"brandName\": \"Reebok\",\n            \"imageUrl\": \"shoes-3.png\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "shop/productswithparams",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/shop/products",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"shop",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "brandId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/shop/products?brandId=3&sort=title&pageIndex=1&pageSize=6",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"shop",
+								"products"
+							],
+							"query": [
+								{
+									"key": "brandId",
+									"value": "3"
+								},
+								{
+									"key": "sort",
+									"value": "title"
+								},
+								{
+									"key": "pageIndex",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\r\n    \"totalPages\": 1,\r\n    \"totalCount\": 6,\r\n    \"pageIndex\": 1,\r\n    \"pageSize\": 6,\r\n    \"productList\": [\r\n        {\r\n            \"productId\": 17,\r\n            \"unitPrice\": 190.0,\r\n            \"brandId\": 3,\r\n            \"categoryId\": 2,\r\n            \"title\": \"All-Star Strike\",\r\n            \"sku\": \"B117\",\r\n            \"description\": \"Best shoes for all-rounders\",\r\n            \"categoryName\": \"Cricket\",\r\n            \"brandName\": \"Under Armour\",\r\n            \"imageUrl\": \"shoes-17.png\"\r\n        },\r\n        {\r\n            \"productId\": 1,\r\n            \"unitPrice\": 210.0,\r\n            \"brandId\": 3,\r\n            \"categoryId\": 2,\r\n            \"title\": \"Pro Kicker\",\r\n            \"sku\": \"B101\",\r\n            \"description\": \"Football boots for champions\",\r\n            \"categoryName\": \"Cricket\",\r\n            \"brandName\": \"Under Armour\",\r\n            \"imageUrl\": \"shoes-1.png\"\r\n        },\r\n        {\r\n            \"productId\": 6,\r\n            \"unitPrice\": 205.0,\r\n            \"brandId\": 3,\r\n            \"categoryId\": 3,\r\n            \"title\": \"Sky Jumper\",\r\n            \"sku\": \"B106\",\r\n            \"description\": \"Best shoes for vertical leaps\",\r\n            \"categoryName\": \"Badminton\",\r\n            \"brandName\": \"Under Armour\",\r\n            \"imageUrl\": \"shoes-6.png\"\r\n        },\r\n        {\r\n            \"productId\": 15,\r\n            \"unitPrice\": 145.0,\r\n            \"brandId\": 3,\r\n            \"categoryId\": 3,\r\n            \"title\": \"Smash Star\",\r\n            \"sku\": \"B115\",\r\n            \"description\": \"Badminton shoes for champions\",\r\n            \"categoryName\": \"Badminton\",\r\n            \"brandName\": \"Under Armour\",\r\n            \"imageUrl\": \"shoes-15.png\"\r\n        },\r\n        {\r\n            \"productId\": 2,\r\n            \"unitPrice\": 320.0,\r\n            \"brandId\": 3,\r\n            \"categoryId\": 1,\r\n            \"title\": \"Speed Striker\",\r\n            \"sku\": \"B102\",\r\n            \"description\": \"Cricket shoes for fast bowlers\",\r\n            \"categoryName\": \"Football\",\r\n            \"brandName\": \"Under Armour\",\r\n            \"imageUrl\": \"shoes-2.png\"\r\n        },\r\n        {\r\n            \"productId\": 10,\r\n            \"unitPrice\": 130.0,\r\n            \"brandId\": 3,\r\n            \"categoryId\": 1,\r\n            \"title\": \"Sprint Master\",\r\n            \"sku\": \"B110\",\r\n            \"description\": \"Ultimate shoes for sprinters\",\r\n            \"categoryName\": \"Football\",\r\n            \"brandName\": \"Under Armour\",\r\n            \"imageUrl\": \"shoes-10.png\"\r\n        }\r\n    ]\r\n}"
+				},
+				{
+					"name": "categoryId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/shop/products?categoryId=3&sort=title&pageIndex=1&pageSize=6",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"shop",
+								"products"
+							],
+							"query": [
+								{
+									"key": "categoryId",
+									"value": "3"
+								},
+								{
+									"key": "sort",
+									"value": "title"
+								},
+								{
+									"key": "pageIndex",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\r\n    \"totalPages\": 1,\r\n    \"totalCount\": 5,\r\n    \"pageIndex\": 1,\r\n    \"pageSize\": 6,\r\n    \"productList\": [\r\n        {\r\n            \"productId\": 3,\r\n            \"unitPrice\": 150.0,\r\n            \"brandId\": 2,\r\n            \"categoryId\": 3,\r\n            \"title\": \"Feather Smash\",\r\n            \"sku\": \"B103\",\r\n            \"description\": \"Lightweight badminton shoes\",\r\n            \"categoryName\": \"Badminton\",\r\n            \"brandName\": \"Reebok\",\r\n            \"imageUrl\": \"shoes-3.png\"\r\n        },\r\n        {\r\n            \"productId\": 6,\r\n            \"unitPrice\": 205.0,\r\n            \"brandId\": 3,\r\n            \"categoryId\": 3,\r\n            \"title\": \"Sky Jumper\",\r\n            \"sku\": \"B106\",\r\n            \"description\": \"Best shoes for vertical leaps\",\r\n            \"categoryName\": \"Badminton\",\r\n            \"brandName\": \"Under Armour\",\r\n            \"imageUrl\": \"shoes-6.png\"\r\n        },\r\n        {\r\n            \"productId\": 9,\r\n            \"unitPrice\": 165.0,\r\n            \"brandId\": 1,\r\n            \"categoryId\": 3,\r\n            \"title\": \"Smash Pro\",\r\n            \"sku\": \"B109\",\r\n            \"description\": \"Dominate the badminton court\",\r\n            \"categoryName\": \"Badminton\",\r\n            \"brandName\": \"Puma\",\r\n            \"imageUrl\": \"shoes-9.png\"\r\n        },\r\n        {\r\n            \"productId\": 15,\r\n            \"unitPrice\": 145.0,\r\n            \"brandId\": 3,\r\n            \"categoryId\": 3,\r\n            \"title\": \"Smash Star\",\r\n            \"sku\": \"B115\",\r\n            \"description\": \"Badminton shoes for champions\",\r\n            \"categoryName\": \"Badminton\",\r\n            \"brandName\": \"Under Armour\",\r\n            \"imageUrl\": \"shoes-15.png\"\r\n        },\r\n        {\r\n            \"productId\": 12,\r\n            \"unitPrice\": 225.0,\r\n            \"brandId\": 1,\r\n            \"categoryId\": 3,\r\n            \"title\": \"Volley King\",\r\n            \"sku\": \"B112\",\r\n            \"description\": \"Take over the volleyball court\",\r\n            \"categoryName\": \"Badminton\",\r\n            \"brandName\": \"Puma\",\r\n            \"imageUrl\": \"shoes-12.png\"\r\n        }\r\n    ]\r\n}"
+				},
+				{
+					"name": "brand&category",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/shop/products?brandId=3&categoryId=3&sort=title&pageIndex=1&pageSize=6",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"shop",
+								"products"
+							],
+							"query": [
+								{
+									"key": "brandId",
+									"value": "3"
+								},
+								{
+									"key": "categoryId",
+									"value": "3"
+								},
+								{
+									"key": "sort",
+									"value": "title"
+								},
+								{
+									"key": "pageIndex",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\r\n    \"totalPages\": 1,\r\n    \"totalCount\": 2,\r\n    \"pageIndex\": 1,\r\n    \"pageSize\": 6,\r\n    \"productList\": [\r\n        {\r\n            \"productId\": 6,\r\n            \"unitPrice\": 205.0,\r\n            \"brandId\": 3,\r\n            \"categoryId\": 3,\r\n            \"title\": \"Sky Jumper\",\r\n            \"sku\": \"B106\",\r\n            \"description\": \"Best shoes for vertical leaps\",\r\n            \"categoryName\": \"Badminton\",\r\n            \"brandName\": \"Under Armour\",\r\n            \"imageUrl\": \"shoes-6.png\"\r\n        },\r\n        {\r\n            \"productId\": 15,\r\n            \"unitPrice\": 145.0,\r\n            \"brandId\": 3,\r\n            \"categoryId\": 3,\r\n            \"title\": \"Smash Star\",\r\n            \"sku\": \"B115\",\r\n            \"description\": \"Badminton shoes for champions\",\r\n            \"categoryName\": \"Badminton\",\r\n            \"brandName\": \"Under Armour\",\r\n            \"imageUrl\": \"shoes-15.png\"\r\n        }\r\n    ]\r\n}"
+				},
+				{
+					"name": "sortingPriceAsc",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/shop/products?sort=priceAsc&pageIndex=1&pageSize=6",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"shop",
+								"products"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "priceAsc"
+								},
+								{
+									"key": "pageIndex",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\n    \"totalPages\": 3,\n    \"totalCount\": 17,\n    \"pageIndex\": 1,\n    \"pageSize\": 6,\n    \"productList\": [\n        {\n            \"productId\": 16,\n            \"unitPrice\": 120.0,\n            \"brandId\": 2,\n            \"categoryId\": 1,\n            \"title\": \"Victory Sprint\",\n            \"sku\": \"B116\",\n            \"description\": \"Reach your top speed\",\n            \"categoryName\": \"Football\",\n            \"brandName\": \"Reebok\",\n            \"imageUrl\": \"shoes-16.png\"\n        },\n        {\n            \"productId\": 10,\n            \"unitPrice\": 130.0,\n            \"brandId\": 3,\n            \"categoryId\": 1,\n            \"title\": \"Sprint Master\",\n            \"sku\": \"B110\",\n            \"description\": \"Ultimate shoes for sprinters\",\n            \"categoryName\": \"Football\",\n            \"brandName\": \"Under Armour\",\n            \"imageUrl\": \"shoes-10.png\"\n        },\n        {\n            \"productId\": 11,\n            \"unitPrice\": 140.0,\n            \"brandId\": 2,\n            \"categoryId\": 2,\n            \"title\": \"Field Warrior\",\n            \"sku\": \"B111\",\n            \"description\": \"Dominate the field with these boots\",\n            \"categoryName\": \"Cricket\",\n            \"brandName\": \"Reebok\",\n            \"imageUrl\": \"shoes-11.png\"\n        },\n        {\n            \"productId\": 15,\n            \"unitPrice\": 145.0,\n            \"brandId\": 3,\n            \"categoryId\": 3,\n            \"title\": \"Smash Star\",\n            \"sku\": \"B115\",\n            \"description\": \"Badminton shoes for champions\",\n            \"categoryName\": \"Badminton\",\n            \"brandName\": \"Under Armour\",\n            \"imageUrl\": \"shoes-15.png\"\n        },\n        {\n            \"productId\": 3,\n            \"unitPrice\": 150.0,\n            \"brandId\": 2,\n            \"categoryId\": 3,\n            \"title\": \"Feather Smash\",\n            \"sku\": \"B103\",\n            \"description\": \"Lightweight badminton shoes\",\n            \"categoryName\": \"Badminton\",\n            \"brandName\": \"Reebok\",\n            \"imageUrl\": \"shoes-3.png\"\n        },\n        {\n            \"productId\": 7,\n            \"unitPrice\": 160.0,\n            \"brandId\": 2,\n            \"categoryId\": 1,\n            \"title\": \"Court Dominator\",\n            \"sku\": \"B107\",\n            \"description\": \"Master the court with these shoes\",\n            \"categoryName\": \"Football\",\n            \"brandName\": \"Reebok\",\n            \"imageUrl\": \"shoes-7.png\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "pageIndex",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/shop/products?sort=title&pageIndex=2&pageSize=6",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"shop",
+								"products"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "title"
+								},
+								{
+									"key": "pageIndex",
+									"value": "2"
+								},
+								{
+									"key": "pageSize",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\r\n    \"totalPages\": 3,\r\n    \"totalCount\": 17,\r\n    \"pageIndex\": 2,\r\n    \"pageSize\": 6,\r\n    \"productList\": [\r\n        {\r\n            \"productId\": 11,\r\n            \"unitPrice\": 140.0,\r\n            \"brandId\": 2,\r\n            \"categoryId\": 2,\r\n            \"title\": \"Field Warrior\",\r\n            \"sku\": \"B111\",\r\n            \"description\": \"Dominate the field with these boots\",\r\n            \"categoryName\": \"Cricket\",\r\n            \"brandName\": \"Reebok\",\r\n            \"imageUrl\": \"shoes-11.png\"\r\n        },\r\n        {\r\n            \"productId\": 14,\r\n            \"unitPrice\": 160.0,\r\n            \"brandId\": 1,\r\n            \"categoryId\": 2,\r\n            \"title\": \"Goal Scorer\",\r\n            \"sku\": \"B114\",\r\n            \"description\": \"Perfect for football stars\",\r\n            \"categoryName\": \"Cricket\",\r\n            \"brandName\": \"Puma\",\r\n            \"imageUrl\": \"shoes-14.png\"\r\n        },\r\n        {\r\n            \"productId\": 1,\r\n            \"unitPrice\": 210.0,\r\n            \"brandId\": 3,\r\n            \"categoryId\": 2,\r\n            \"title\": \"Pro Kicker\",\r\n            \"sku\": \"B101\",\r\n            \"description\": \"Football boots for champions\",\r\n            \"categoryName\": \"Cricket\",\r\n            \"brandName\": \"Under Armour\",\r\n            \"imageUrl\": \"shoes-1.png\"\r\n        },\r\n        {\r\n            \"productId\": 6,\r\n            \"unitPrice\": 205.0,\r\n            \"brandId\": 3,\r\n            \"categoryId\": 3,\r\n            \"title\": \"Sky Jumper\",\r\n            \"sku\": \"B106\",\r\n            \"description\": \"Best shoes for vertical leaps\",\r\n            \"categoryName\": \"Badminton\",\r\n            \"brandName\": \"Under Armour\",\r\n            \"imageUrl\": \"shoes-6.png\"\r\n        },\r\n        {\r\n            \"productId\": 9,\r\n            \"unitPrice\": 165.0,\r\n            \"brandId\": 1,\r\n            \"categoryId\": 3,\r\n            \"title\": \"Smash Pro\",\r\n            \"sku\": \"B109\",\r\n            \"description\": \"Dominate the badminton court\",\r\n            \"categoryName\": \"Badminton\",\r\n            \"brandName\": \"Puma\",\r\n            \"imageUrl\": \"shoes-9.png\"\r\n        },\r\n        {\r\n            \"productId\": 15,\r\n            \"unitPrice\": 145.0,\r\n            \"brandId\": 3,\r\n            \"categoryId\": 3,\r\n            \"title\": \"Smash Star\",\r\n            \"sku\": \"B115\",\r\n            \"description\": \"Badminton shoes for champions\",\r\n            \"categoryName\": \"Badminton\",\r\n            \"brandName\": \"Under Armour\",\r\n            \"imageUrl\": \"shoes-15.png\"\r\n        }\r\n    ]\r\n}"
+				},
+				{
+					"name": "search",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/shop/products?sort=title&pageIndex=1&pageSize=6&search=blaze",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"shop",
+								"products"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "title"
+								},
+								{
+									"key": "pageIndex",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "6"
+								},
+								{
+									"key": "search",
+									"value": "blaze"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\r\n    \"totalPages\": 1,\r\n    \"totalCount\": 1,\r\n    \"pageIndex\": 1,\r\n    \"pageSize\": 6,\r\n    \"productList\": [\r\n        {\r\n            \"productId\": 4,\r\n            \"unitPrice\": 200.0,\r\n            \"brandId\": 1,\r\n            \"categoryId\": 1,\r\n            \"title\": \"Blaze Runner\",\r\n            \"sku\": \"B104\",\r\n            \"description\": \"High-performance running shoes\",\r\n            \"categoryName\": \"Football\",\r\n            \"brandName\": \"Puma\",\r\n            \"imageUrl\": \"shoes-4.png\"\r\n        }\r\n    ]\r\n}"
+				}
+			]
+		},
+		{
+			"name": "shop/categories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/shop/categories",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"shop",
+						"categories"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/shop/categories",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"shop",
+								"categories"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "[\n    {\n        \"categoryId\": 1,\n        \"categoryName\": \"Football\",\n        \"products\": []\n    },\n    {\n        \"categoryId\": 2,\n        \"categoryName\": \"Cricket\",\n        \"products\": []\n    },\n    {\n        \"categoryId\": 3,\n        \"categoryName\": \"Badminton\",\n        \"products\": []\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "shop/brands",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/shop/categories",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"shop",
+						"categories"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/shop/brands",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"shop",
+								"brands"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "[\r\n    {\r\n        \"brandId\": 1,\r\n        \"brandName\": \"Puma\",\r\n        \"products\": []\r\n    },\r\n    {\r\n        \"brandId\": 2,\r\n        \"brandName\": \"Reebok\",\r\n        \"products\": []\r\n    },\r\n    {\r\n        \"brandId\": 3,\r\n        \"brandName\": \"Under Armour\",\r\n        \"products\": []\r\n    }\r\n]"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://b78499d2-00ea-45ad-8a8d-ab3ec2d39da2.mock.pstmn.io"
+		}
+	]
+}
