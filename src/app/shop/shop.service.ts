@@ -54,4 +54,10 @@ export class ShopService {
   getShopParams() {
     return this.shopParams;
   }
+  getProductById(id: number) {
+    console.log(id);
+    return this.http.get<ProductDto>(
+      environment.apiUrl + '/shop/products/' + id
+    );
+  }
 }

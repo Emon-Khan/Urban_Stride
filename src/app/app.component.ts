@@ -4,6 +4,7 @@ import { NavBarComponent } from './core/nav-bar/nav-bar.component';
 import { ShopComponent } from './shop/shop.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductDto } from './shared/model/product';
 
 @Component({
   selector: 'app-root',
@@ -19,5 +20,5 @@ import { HttpClientModule } from '@angular/common/http';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'Welcome to Urban Stride';
+  productDto?: ProductDto;
 }
